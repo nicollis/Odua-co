@@ -1,0 +1,350 @@
+body{
+    -webkit-font-smoothing: antialiased;
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    color: #434343;
+    min-width: 700px;
+}
+
+hr{
+    border: 0px;
+    background: #cccccc;
+    height: 2px;
+    margin: 0px auto;
+    width: 650px;
+}
+/*
+        HEADER INFORMATION
+*/
+header{
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px;
+}
+header ul{
+    list-style: none;
+    margin: 0px;
+}
+header ul li{
+    display: inline;
+    position: relative;
+}
+vr{
+    border-left: 2px solid #ccc;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+a:link, a:visited{
+    display: inline-block;
+    padding: 0px 18px;
+    text-decoration: none;
+    color: inherit;
+}
+header strong, a:hover{
+    color: #6d9eeb;
+}
+/* SUB-HEADER INFORMATION */
+header ul ul{
+    display: none;
+}
+header ul li:hover>ul{
+    display: table;
+    table-layout: fixed;
+}
+
+header ul li>ul{
+    background-color: #d3d3d3;
+    position: absolute;
+    top: 42px;
+    left: 30px;
+    z-index:99;
+    font-size: 22px;
+    padding: 0;
+    font-weight: normal;
+    text-align: left;
+}
+header ul li:hover>ul li{
+    float:none;
+    display: block;
+    border-image: url(../img/background.png) 1 repeat;
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+header ul li> ul li a {
+    padding: 5px;
+}
+
+/*
+        HOME PAGE INFORMATION
+*/
+.container{
+}
+.galleria{
+    width: 600px;
+    height: 360px;
+    background: #000;
+    margin: 0 auto;
+}
+.galleria img{
+    border-radius: 10px;
+}
+.info-container{
+    display: inline-block;
+    width: 650px;
+}
+.info-box{
+    display: inline-block;
+    width: 250px;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 20px
+}
+name{
+    font-weight: bold;
+    color: #222;
+    font-size: 26px
+}
+/*
+        FOOTER INFORMATION
+*/
+footer{
+    font-size: 13px;
+}
+.footer-hr{
+    margin-top: 20px;
+    width: auto;
+}
+copyright{
+    float:left;
+    margin-left: 10;
+}
+links ul{
+    float: right;
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+links ul li {
+    display: inline;
+    padding: 0px;
+}
+links a:link, links a:visited{
+    padding-left: 0px;
+}
+/*
+        APPS INFORMATION
+*/
+content{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#apps_content a{
+    display: inline-block;
+    padding 0px;
+    margin: 16px 16px;
+}
+apptag{
+    width: 280px;
+    height: 460px;
+    background: #d9d9d9;
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid #bbb;
+    float:left;
+    position: relative;
+}
+apptag:hover{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+apptag img{
+    width: 250px;
+    height: 200px;
+}
+apptag disc{
+    margin-top: 10px;
+}
+apptag > platforms{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px auto;
+    left: 0px;
+    right:0px;
+}
+apptag platforms img{
+    width: 76px;
+    height: 100px;
+    padding: 7px;
+    margin-top: 10px;
+}
+/*
+    CHAT INFORMATION
+*/
+#chat-page a{
+    text-decoration: none;
+    color: #6d9eeb;
+}
+#chat-left  > .info-box{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+#chat-page div {
+    display: inline-block;
+    vertical-align: middle;
+}
+#chat-right{
+    
+}
+#contact_block{
+    text-align: left;
+}
+#contact_block name{
+    padding-right: 10px;
+    padding-left: 30px;
+    font-size: 22px;
+}
+#contact_block input{
+    width:300px;
+    display:inline-block;
+    border: 1px solid #d9d9d9;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+#contact_block textarea{
+    display:block;
+    width:375px;
+    height:150px;
+    margin-left: 30px;
+    font-family: 'Reboto', sans-serif;
+}
+#contact_block textarea:focus,#contact_block input:focus {
+border: 1px solid #434343;
+}
+#form_title{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+#contact_block input.button{
+    height: 30px;
+    width: 160px;
+    margin-left: 30px;
+    border: 1px solid #d9d9d9;
+    background-color: #f3f3f3;
+    color: #434343 
+}
+#contact_block input.button:hover{
+    background-color: #b7b7b7;
+}
+/*
+        HIRE PAGE INFORMATION
+*/
+#hire-header{
+    
+}
+.three-skills{
+    padding: 0px;
+    display: block;
+    margin: 0 auto;
+}
+.three-skills > vr {
+    padding-top: 130px;
+    margin: 0 10px;
+}
+.skill{
+    display: inline-block;
+    width: 140px;
+    padding: 10px;
+}
+.skill > .skill_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 2px solid #434343;
+}
+.skill > h3{
+    margin: 4px;
+}
+.skill > p{
+    margin: 0px;
+}
+.hire-details{
+    width: 500px;
+    margin: 10px auto;
+}
+/*
+    Blog Page Properties
+*/
+.blog{
+    display: inline-block;
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+}
+search-box{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+search-box input{
+    width:200px;
+    display:inline-block;
+    border: 1px solid #d9d9d9;
+    height: 26px;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    color: #222;
+}
+blog-entry{
+    text-align: left;
+}
+.title{
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 10px;
+    color: black;
+}
+.datestamp{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    font-style: italic;
+}
+.blog-data{
+    padding: 10px;
+}
+.tags{
+    font-size: 14px;
+    padding-left: 10px;
+    font-style: italic;
+}
+blog-entry hr{
+    margin-bottom: 30px;
+}
+/*
+    Misc
+*/
+#privacy { text-align: center; }
+#privacy iframe{
+    width: 1000px;
+    height: 690px;
+}
